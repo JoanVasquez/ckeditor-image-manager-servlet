@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CKEditor</title>
+	<script src="assets/ckeditor/ckeditor.js"></script>
+</head>
+<body>
+	<textarea id="content"></textarea>
+	<script>
+		CKEDITOR.replace('content', {
+			filebrowserBrowseUrl : 'http://localhost:8080/CKEditorImagesServlet/ckbrowser.html',
+			filebrowserUploadUrl : 'http://localhost:8080/CKEditorImagesServlet/imageManager.co'
+		});
+	</script>
+</body>
+</html>
